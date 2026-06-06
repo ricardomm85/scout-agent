@@ -1,7 +1,7 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
-import { SITE, HOME, SOCIALS } from "@consts";
+import { SITE, HOME } from "@consts";
 import ArrowCard from "@components/ArrowCard.astro";
 import Link from "@components/Link.astro";
 import { getCollection } from "astro:content";
@@ -16,7 +16,7 @@ const blog = (await getCollection("blog"))
   <Container>
     <aside data-pagefind-ignore>
       <h1 class="font-semibold text-black dark:text-white">
-        scout-agent 🏀
+        Scouting reports, written by an AI agent 🏀
       </h1>
       <div class="space-y-16">
         <section>
@@ -56,33 +56,6 @@ const blog = (await getCollection("blog"))
               blog.map((post) => (
                 <li>
                   <ArrowCard entry={post} />
-                </li>
-              ))
-            }
-          </ul>
-        </section>
-
-        <section class="animate space-y-4">
-          <h2 class="font-semibold text-black dark:text-white">
-            Let's connect
-          </h2>
-          <article>
-            <p>
-              Building this in the open. Follow along or reach out.
-            </p>
-          </article>
-          <ul class="not-prose flex flex-wrap gap-2">
-            {
-              SOCIALS.map((SOCIAL) => (
-                <li class="flex gap-x-2 text-nowrap">
-                  <Link
-                    href={SOCIAL.HREF}
-                    external
-                    aria-label={`${SITE.TITLE} on ${SOCIAL.NAME}`}
-                  >
-                    {SOCIAL.NAME}
-                  </Link>
-                  {"/"}
                 </li>
               ))
             }
