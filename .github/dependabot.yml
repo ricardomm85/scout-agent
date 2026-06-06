@@ -1,0 +1,16 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/site"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    # Group all npm bumps into a single weekly PR instead of one per dependency.
+    groups:
+      npm:
+        patterns: ["*"]
+    ignore:
+      # Stay on Astro 5: the Astro Micro theme targets v5 and v6 has breaking
+      # changes. Still accept minor/patch updates within v5.
+      - dependency-name: "astro"
+        update-types: ["version-update:semver-major"]

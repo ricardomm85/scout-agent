@@ -11,12 +11,15 @@ type Props = {
 };
 
 const { title, description } = Astro.props;
+
+// Avoid "scout-agent | scout-agent" on pages whose title is already the site name.
+const pageTitle = title === SITE.TITLE ? title : `${title} | ${SITE.TITLE}`;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <Head title={`${title} | ${SITE.TITLE}`} description={description} />
+    <Head title={pageTitle} description={description} />
   </head>
   <body>
     <noscript>
