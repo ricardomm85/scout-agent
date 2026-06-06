@@ -1,0 +1,43 @@
+# Secretos y entorno
+.env
+.env.*
+!.env.example
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# Herramientas / cachés
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# LangGraph / checkpoints locales
+*.sqlite
+*.sqlite3
+checkpoints/
+
+# Playwright
+playwright-report/
+.cache/ms-playwright/
+
+# Editores / SO
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Logs y datos generados
+*.log
+data/raw/
+informes/
