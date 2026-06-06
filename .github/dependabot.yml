@@ -10,7 +10,12 @@ updates:
       npm:
         patterns: ["*"]
     ignore:
-      # Stay on Astro 5: the Astro Micro theme targets v5 and v6 has breaking
-      # changes. Still accept minor/patch updates within v5.
+      # Stay on Astro 5: the Astro Micro theme targets v5. Major bumps of Astro
+      # and its ecosystem integrations (mdx, rss, sitemap, check, pagefind)
+      # require/track Astro 6 and would break the build. Keep minor/patch.
       - dependency-name: "astro"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "@astrojs/*"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "astro-pagefind"
         update-types: ["version-update:semver-major"]
