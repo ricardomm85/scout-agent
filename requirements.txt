@@ -1,0 +1,6 @@
+# Direct dependencies. Pinned to the versions installed on Day 1.
+# Transitive deps (langchain-core, google-genai, etc.) are resolved by pip.
+langgraph==1.2.4
+langchain==1.3.4
+langchain-google-genai==4.2.4
+python-dotenv==1.2.2

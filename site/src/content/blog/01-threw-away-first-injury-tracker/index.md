@@ -58,5 +58,3 @@ not sure, go look again instead of guessing.
 
 That's an agent, not a pipeline. Next post I'll build the smallest possible
 version of one: an LLM that decides, by itself, to reach for a tool.
-
-Repo: [github.com/ricardomm85/scout-agent](https://github.com/ricardomm85/scout-agent)
