@@ -8,7 +8,8 @@ Act): it reasons about what it needs to know, uses tools to research it (stats,
 injuries, contracts, video), cross-checks the data, and writes an up-to-date
 report.
 
-I build it **in public**, step by step. Follow the process on LinkedIn.
+I build it **in public**, step by step. Follow the process on
+[LinkedIn](https://www.linkedin.com/in/ricardo-full-stack/).
 
 ## The idea
 
@@ -35,11 +36,7 @@ And the agent, autonomously:
 `Python 3.13` · `LangGraph` · `Claude (Anthropic)` · `FastAPI` · `Playwright` ·
 `Docker` · `Kamal`
 
-## Documentation
-
-- [Data sources](docs/data-sources.md) — where the information comes from.
-- [Report structure](docs/report-structure.md) — what a GM reads.
-
 ---
 
-_A [Scout Basketball](https://scoutbasketball.com) project._
+_A [Scoutbasketball](https://scoutbasketball.com) project by
+[Ricardo](https://www.linkedin.com/in/ricardo-full-stack/)._
