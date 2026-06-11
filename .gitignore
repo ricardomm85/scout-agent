@@ -22,9 +22,10 @@ env/
 .mypy_cache/
 .ipynb_checkpoints/
 
-# LangGraph / checkpoints locales
+# LangGraph / checkpoints locales y BD de juguete (scout.db)
 *.sqlite
 *.sqlite3
+*.db
 checkpoints/
 
 # Playwright

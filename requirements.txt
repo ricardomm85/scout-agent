@@ -3,4 +3,5 @@
 langgraph==1.2.4
 langchain==1.3.4
 langchain-google-genai==4.2.4
+sqlalchemy==2.0.50  # our own thin read-only DB layer (db.py) for the SQL agent
 python-dotenv==1.2.2

@@ -25,7 +25,7 @@ running.
 
 ## Then I read the output
 
-![The agent's "Injuries" card showing seven separate bullet points that all describe the same leg injury — fracture against Barcelona, surgery next week, ~3 months out, season over.](./injuries.png)
+![The agent's "Injuries" card showing seven separate bullet points that all describe the same leg injury: fracture against Barcelona, surgery next week, ~3 months out, season over.](./injuries.png)
 
 Seven bullet points on one guy. Go through them slowly and you realize they're
 all describing the same broken leg: it happened against Barcelona, surgery's
